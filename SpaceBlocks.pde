@@ -70,7 +70,7 @@ void setupAudio()
   {
     try
     {
-      inputStream[i-1] = AudioSystem.getAudioInputStream(new File("F:/Code Sources/Processing/Game_App/GameApp/Data", i + ".wav"));
+      inputStream[i-1] = AudioSystem.getAudioInputStream(new File(dataPath(i + ".wav")));
       clips[i-1] = AudioSystem.getClip();
       clips[i-1].open(inputStream[i-1]);
     }
